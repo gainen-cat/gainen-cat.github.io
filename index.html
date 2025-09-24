@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1920 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=800 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -52,12 +52,12 @@
       }
 
       var buildUrl = "Build";
-      var loaderUrl = buildUrl + "/8pazzWeb.loader.js";
+      var loaderUrl = buildUrl + "/gainen-cat.github.io.loader.js";
       var config = {
         arguments: [],
-        dataUrl: buildUrl + "/8pazzWeb.data",
-        frameworkUrl: buildUrl + "/8pazzWeb.framework.js",
-        codeUrl: buildUrl + "/8pazzWeb.wasm",
+        dataUrl: buildUrl + "/gainen-cat.github.io.data",
+        frameworkUrl: buildUrl + "/gainen-cat.github.io.framework.js",
+        codeUrl: buildUrl + "/gainen-cat.github.io.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "8_Tile_Puzzle",
@@ -98,8 +98,8 @@
 
       } else {
         // Desktop style: Render the game canvas in a window that can be maximized to fullscreen:
-        canvas.style.width = "1920px";
-        canvas.style.height = "1080px";
+        canvas.style.width = "800px";
+        canvas.style.height = "600px";
       }
 
       document.querySelector("#unity-loading-bar").style.display = "block";
